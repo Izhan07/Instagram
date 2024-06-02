@@ -1,0 +1,641 @@
+*{
+    font-family: sans-serif;
+}
+.dp{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+}
+.dp img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-card{
+    height: 250px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 60px;
+}
+.p-btn{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+    margin: 10px 0px;
+}
+.p-data{
+    display: flex;
+    gap: 20px;
+    
+}
+.btn{
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+}
+.post-dp{
+    height: 35px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   padding: 6px 0px;
+}
+.post-dp img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+
+}
+.post-card-cont{
+   padding: 4px;
+    width: 538px;
+    height: 600px;
+overflow-y: hidden;
+}
+.maxheight{
+    height: 700px;
+  
+}
+.post-card-img{
+    width: 100%;
+    height:500px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-card-img img{
+    width: 530px;
+    height:500px ;
+    object-fit: cover;
+}
+.post-content{
+    display: flex;
+    padding: 4px;
+    position: relative;
+    width: 80%;
+}
+.content-p{
+    width: 100%;
+}
+.content-btn{
+    border: none;
+    height: 25px;
+    width: 70px;
+    bottom: 40px;
+    right: -100px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 0.6rem;
+    color: rgb(0, 153, 255);
+}
+.post-icons img{
+    height: 25px;
+}
+.post-icons{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 4px 0px;
+    gap: 4px;
+}
+.save{
+    position: absolute;
+    right: 0px;
+}
+.profile-post{
+    height: 300px;
+    width: 250px;
+    margin: 3px;
+}
+.profile-post img{
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    margin: 3px;
+}
+.profile-posts-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.create-post-cont{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 8px;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(320deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    
+}
+.image-input{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.image-input img{
+    height: 25px;
+  
+}
+.img-input{
+    padding: 5px;
+    color: white;
+}
+.disc-input{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px 6px;
+   
+}
+.disc{
+    height: 100px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    background: linear-gradient(320deg,  #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border:none;
+    color: white;
+}
+.B{
+    background-color: rgb(57, 114, 238);
+    color: white;
+    margin-top: 3px;
+}
+
+.disc::placeholder {
+    color: white; 
+}
+.logo img{
+    height: 40px;
+    width: 100px;
+    object-fit: cover;
+}
+.login-cont{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 8px;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(320deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+
+}
+.login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.email{
+    height: 80px;
+    width: 90%;
+   
+}
+.password{
+    height: 80px;
+    width: 90%;
+    
+}
+.input{
+    height: 25px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 3px;
+    outline: none;
+}
+.login-para{
+    margin: 6px;
+  
+}
+.name{
+    height: 50px;
+    width: 90%;
+    margin: 6px;
+}
+.signup-para{
+    margin: 4px;
+}
+
+@media (max-width: 430px) and (min-width: 376px){
+    .post-card-img{
+        width: 100%;
+    }
+    .post-card-img img{
+        width: 384px;
+    }
+    .post-icons{
+        width: 100%;
+    }
+    .post-dp{
+        width: 100%;
+    }
+    .post-content{
+        width: 74%;
+    height: 20%;
+    }
+    .post-card-cont{
+        width: 100%;
+    }
+    .content-btn{
+        bottom: 100px;
+    right: -95px;
+    }
+    .content-p{
+        width: 95%;
+    }
+
+
+    .profile-cont{
+        width: 83%;
+        height: 92vh;
+    }
+    .dp img{
+        height: 60px;
+        width: 60px;
+    }
+    .dp{
+        height: 60px;
+        width: 60px;
+        padding: 3px;
+    }
+    .profile-card{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .p-data{
+        justify-content: center;
+    }
+    .profile-post img{
+        height: 220px;
+        width: 180px;
+    }
+    .profile-post{
+        height: 220px;
+    width: 180px;
+    }
+    .profile-posts-cont{
+        justify-content: center;
+    }
+
+
+    .create-post-cont{
+        width: 90vw;
+    }
+    .disc-input{
+        width: 90%;
+    }
+
+
+    .login-cont{
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .email{
+        width: 83%;
+    }
+    .password{
+        width: 83%;
+    }
+}
+@media (max-width: 540px) and (min-width: 431px){
+    .post-card-img{
+        width: 100%;
+    
+    }
+    .post-card-img img{
+        width: 437px;
+    }
+    .post-card-cont{
+        width: 100%;
+    }
+    .post-content{
+        width: 98%;
+        height: 13%;
+    }
+    .content-btn{
+        bottom: 60px;
+        right: -4px;
+        outline: none;
+    }
+    .content-p{
+        width: 64%;
+    }
+
+
+    .dp img{
+        width: 60px;
+        height: 60px;
+    }
+    .dp{
+        height: 60px;
+        width: 60px;
+    }
+    .profile-card{
+        gap: 18px;
+        width: 100%;
+        padding: 0px;
+    }
+    .btn{
+        width: 120px;
+    }
+    .p-data{
+        justify-content: center;
+    }
+    .profile-post{
+        height: 260px;
+        width: 193px;
+    }
+    .profile-post img{
+        height: 260px;
+        width: 193px;
+    }
+
+
+    .create-post-cont{
+        width: 65vw;
+    }
+    .disc-input{
+        width: 90%;
+    }
+
+    .login-cont{
+        width: 60vw;
+        height: 50vh;
+    }
+
+    .email{
+        width: 83%;
+    }
+    .password{
+        width: 83%;
+    }
+}
+@media (max-width: 820px) and (min-width: 541px){
+.post-card-img{
+    width: 100%;
+}
+.post-card-cont{
+    width: 530px;
+}
+.content-btn{
+    bottom: 57px;
+    right: -2px;
+}
+.content-p{
+    width: 69%;
+}
+.profile-posts-cont{
+    justify-content: center;
+}
+
+.dp img{
+    width: 60px;
+    height: 60px;
+}
+.dp{
+    height: 60px;
+    width: 60px;
+}
+.profile-card{
+    gap: 18px;
+    width: 100%;
+    padding: 0px;
+}
+.btn{
+    width: 120px;
+}
+.p-data{
+    justify-content: center;
+}
+.profile-post{
+    height: 260px;
+    width: 193px;
+}
+.profile-post img{
+    height: 260px;
+    width: 193px;
+}
+
+.create-post-cont{
+    width: 60vw;
+}
+.disc{
+    height: 150px;
+}
+.disc-input{
+    height: 150px;
+}
+
+.login-cont{
+    width: 60vw;
+}
+.input{
+    height: 35px;
+}
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 821px){
+.post-card-img{
+    width: 100%;
+}
+.post-content{
+    height: 19%;
+}
+.content-p{
+    width: 64%;
+}
+.content-btn{
+    bottom: 99px;
+    right: -4px;
+}
+
+.create-post-cont{
+    width: 60vw;
+}
+.disc{
+    height: 200px;
+}
+.disc-input{
+    height: 200px;
+}
+
+.login-cont{
+    width: 60vw;
+}
+.input{
+    height: 42px;
+}
+.name{
+    margin: 17px;
+}
+}
+@media(max-width: 375px){
+    .post-card-img{
+        width: 100%;
+    }
+    .post-card-img img{
+        width: 340px;
+        height: 468px;
+    }
+    .post-icons{
+        width: 100%;
+    }
+    .post-dp{
+        width: 100%;
+    }
+    .post-content{
+        width: 89%;
+    height: 20%;
+    }
+    .post-card-cont{
+        width: 100%;
+    }
+    .content-btn{
+        bottom: 100px;
+    right: -22px;
+    }
+    .content-p{
+        width: 95%;
+    }
+
+
+
+    .profile-cont{
+        width: 83%;
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    .dp img{
+        height: 60px;
+        width: 60px;
+    }
+    .dp{
+        height: 60px;
+        width: 60px;
+        padding: 3px;
+    }
+    .profile-card{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .p-data{
+        justify-content: center;
+    }
+    .profile-post img{
+        height: 220px;
+        width: 166px;
+    }
+    .profile-post{
+        height: 220px;
+    width: 166px;
+    }
+    .profile-posts-cont{
+        justify-content: center;
+    }
+    .p-btn{
+        gap: 15px;
+    }
+
+
+
+    .create-post-cont{
+        width: 90vw;
+    }
+    .disc-input{
+        width: 90%;
+    }
+
+
+    .login-cont{
+        width: 90vw;
+    }
+}
+@media(max-height: 600px){
+    
+    .post-card-img{
+        width: 100%;
+    }
+    .post-card-img img{
+        width: 384px;
+    }
+    .post-icons{
+        width: 100%;
+    }
+    .post-dp{
+        width: 100%;
+    }
+    .post-content{
+        width: 74%;
+    height: 20%;
+    }
+    .post-card-cont{
+        width: 41%;
+    }
+    .content-btn{
+        bottom: 100px;
+    right: -95px;
+    }
+    .content-p{
+        width: 99%;
+    }
+
+
+    .create-post-cont{
+        width: 35vw;
+        height: 70vh;
+    }
+
+    .disc{
+        height: 100px;
+    }
+    .disc-input{
+        height: 100px;
+    }
+
+
+    .login-cont{
+        height: 70vh;
+        width: 40vw;
+    }
+    .input{
+        height: 30px;
+    }
+}
+

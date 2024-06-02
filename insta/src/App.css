@@ -1,0 +1,11 @@
+.app-cont{
+    display: flex;
+    width: 100%;
+}
+@media (max-width: 420px){
+    .app-cont{
+        flex-direction: column;
+        position: relative;
+    }
+
+}
