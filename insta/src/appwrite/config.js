@@ -104,6 +104,13 @@ async uploadPic(file,dpid){
         console.log("Appwrite service :: uploadPic :: error", error)
     }
 }
+async getfile(){
+    try{
+        return this.bucket.listFiles(conf.appwriteBucketid)
+    }catch (error){
+        console.log("Appwrite service :: getfile :: error", error)
+    }
+}
 async deleteFile(fileId){
    try {
     await this.bucket.deleteFile(
